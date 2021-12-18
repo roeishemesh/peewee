@@ -64,7 +64,3 @@ if __name__ == '__main__':
     for i in query:
         print(i)
 
-    query = Membership.select(Membership.member_id).join(Users).where(
-        (Users.username == "roei"))
-    for i in query:
-        print(i)
