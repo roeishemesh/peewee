@@ -2,9 +2,7 @@ import datetime
 
 from peewee import *
 
-mysql_db = MySQLDatabase('chat database', user='root', password='1431',
-                         host='localhost')
-
+mysql_db = MySQLDatabase()
 
 class Users(Model):
     user_id = AutoField()
